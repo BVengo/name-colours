@@ -1,26 +1,39 @@
-# AFK Setup
-scoreboard objectives add nc.x1 dummy
-scoreboard objectives add nc.y1 dummy
-scoreboard objectives add nc.z1 dummy
+# Scoreboards Setup
+scoreboard objectives add nc_x1 dummy
+scoreboard objectives add nc_y1 dummy
+scoreboard objectives add nc_z1 dummy
 
-scoreboard objectives add nc.x2 dummy
-scoreboard objectives add nc.y2 dummy
-scoreboard objectives add nc.z2 dummy
+scoreboard objectives add nc_x2 dummy
+scoreboard objectives add nc_y2 dummy
+scoreboard objectives add nc_z2 dummy
 
-scoreboard objectives add nc.isAFK dummy
+scoreboard objectives add nc_checkAFK dummy
 
-team add nc.afk {"text":"AFK","bold":true,"color":"gray"}
-team modify nc.afk color gray
+# Teams Setup
+team add nc_overworld {"text":"Overworld","color":"dark_green"}
+team add nc_nether {"text":"Nether","color":"red"}
+team add nc_end {"text":"End","color":"dark_purple"}
 
-# Dimensions Setup
-team add nc.overworld {"text":"Overworld","bold":true,"color":"dark_green"}
-team add nc.nether {"text":"Nether","bold":true,"color":"red"}
-team add nc.end {"text":"End","bold":true,"color":"dark_purple"}
+team modify nc_overworld color dark_green
+team modify nc_nether color red
+team modify nc_end color dark_purple
 
-team modify nc.overworld color dark_green
-team modify nc.nether color red
-team modify nc.end color dark_purple
+team modify nc_overworld seeFriendlyInvisibles false
+team modify nc_nether seeFriendlyInvisibles false
+team modify nc_end seeFriendlyInvisibles false
 
-team modify nc.overworld seeFriendlyInvisibles false
-team modify nc.nether seeFriendlyInvisibles false
-team modify nc.end seeFriendlyInvisibles false
+team add nc_afk_overworld {"text":"AFK Overworld","color":"dark_green"}
+team add nc_afk_nether {"text":"AFK Nether","color":"red"}
+team add nc_afk_end {"text":"AFK End","color":"dark_purple"}
+
+team modify nc_afk_overworld color dark_green
+team modify nc_afk_nether color red
+team modify nc_afk_end color dark_purple
+
+team modify nc_afk_overworld seeFriendlyInvisibles false
+team modify nc_afk_nether seeFriendlyInvisibles false
+team modify nc_afk_end seeFriendlyInvisibles false
+
+team modify nc_afk_overworld prefix {"text":"[AFK] ","color":"gray"}
+team modify nc_afk_nether prefix {"text":"[AFK] ","color":"gray"}
+team modify nc_afk_end prefix {"text":"[AFK] ","color":"gray"}

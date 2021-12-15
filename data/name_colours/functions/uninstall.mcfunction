@@ -4,17 +4,19 @@
 
 schedule clear name_colours:update
 
-# AFK Removal
-scoreboard objectives remove nc.x1
-scoreboard objectives remove nc.x2
-scoreboard objectives remove nc.y1
-scoreboard objectives remove nc.y2
-scoreboard objectives remove nc.z1
-scoreboard objectives remove nc.z2
-scoreboard objectives remove nc.checkAFK
-team remove nc.afk
+scoreboard objectives remove nc_x1
+scoreboard objectives remove nc_x2
+scoreboard objectives remove nc_y1
+scoreboard objectives remove nc_y2
+scoreboard objectives remove nc_z1
+scoreboard objectives remove nc_z2
+scoreboard objectives remove nc_checkAFK
 
-# Dimensionals Removal
-team remove nc.overworld
-team remove nc.nether
-team remove nc.end
+team remove nc_overworld
+team remove nc_nether
+team remove nc_end
+team remove nc_afk_overworld
+team remove nc_afk_nether
+team remove nc_afk_end
+
+tag @a remove nc_isAFK
