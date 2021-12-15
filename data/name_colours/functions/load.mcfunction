@@ -34,6 +34,6 @@ team modify nc_1_afk_overworld seeFriendlyInvisibles false
 team modify nc_3_afk_nether seeFriendlyInvisibles false
 team modify nc_5_afk_end seeFriendlyInvisibles false
 
-team modify nc_1_afk_overworld prefix {"text":"[AFK] ","color":"gray"}
-team modify nc_3_afk_nether prefix {"text":"[AFK] ","color":"gray"}
-team modify nc_5_afk_end prefix {"text":"[AFK] ","color":"gray"}
+team modify nc_1_afk_overworld suffix {"text":" [AFK]","color":"gray"}
+team modify nc_3_afk_nether suffix {"text":" [AFK]","color":"gray"}
+team modify nc_5_afk_end suffix {"text":" [AFK]","color":"gray"}
