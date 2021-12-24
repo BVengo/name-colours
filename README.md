@@ -7,7 +7,7 @@ This is a basic minecraft datapack, designed to colour the names of players base
 | Nether    | Red       |
 | End       | Purple    |
 
-Additionally, AFK players will have their names suffixed with a gray **\[AFK]** tag
+Additionally, AFK players will have their names suffixed with a gray **\[AFK]** tag after 5 minutes.
 
 The following image is a preview of all dimension and AFK combinations.
 ![](https://i.imgur.com/m3Hjg2F.png)
