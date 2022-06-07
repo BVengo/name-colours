@@ -1,4 +1,3 @@
-# Scoreboards Setup
 scoreboard objectives add nc_x1 dummy
 scoreboard objectives add nc_y1 dummy
 scoreboard objectives add nc_z1 dummy
@@ -9,7 +8,6 @@ scoreboard objectives add nc_z2 dummy
 
 scoreboard objectives add nc_checkAFK dummy
 
-# Teams Setup
 team add nc_0_overworld {"text":"Overworld","color":"dark_green"}
 team add nc_2_nether {"text":"Nether","color":"red"}
 team add nc_4_end {"text":"End","color":"dark_purple"}

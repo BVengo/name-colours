@@ -1,7 +1,3 @@
-# Desc: All commands here run every second
-#
-# Called by: main:tick
-
 schedule function name_colours:update 1s
 
 scoreboard players add @a nc_checkAFK 1

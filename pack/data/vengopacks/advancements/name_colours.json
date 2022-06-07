@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:end_portal_frame"
+		},
+		"title": "Name Colours",
+		"description": ["", 
+			{"text": "Colour player names based on the dimension they're in!\n", "color": "green"},
+			{"text": "Also add an [AFK] suffix to those who have stood still for 5 minutes.", "color": "green"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "parent": "vengopacks:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
